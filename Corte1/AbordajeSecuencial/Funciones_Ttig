@@ -1,0 +1,16 @@
+import math
+
+def s(g):
+    return math.sin(math.radians(g))
+
+def c(g):
+    return math.cos(math.radians(g))
+
+def t(g):
+    return math.tan(math.radians(g))
+
+a = float(input("Ingresa el ángulo en grados: "))
+
+print("sin(", a, "°) =", s(a))
+print("cos(", a, "°) =", c(a))
+print("tan(", a, "°) =", t(a))
