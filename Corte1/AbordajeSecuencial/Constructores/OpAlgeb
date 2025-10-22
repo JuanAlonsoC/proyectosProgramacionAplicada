@@ -1,0 +1,61 @@
+import math
+
+class Op:
+    def __init__(self):
+        self.v1 = 0
+        self.v2 = 0
+        self.r = 0
+
+    def setV1(self, x):
+        self.v1 = x
+
+    def setV2(self, x):
+        self.v2 = x
+
+    def getV1(self):
+        return self.v1
+
+    def getV2(self):
+        return self.v2
+
+    def getR(self):
+        return self.r
+
+    # Operaciones básicas
+    def sumar(self, a, b):
+        self.r = a + b
+        return self.r
+
+    def restar(self, a, b):
+        self.r = a - b
+        return self.r
+
+    def mult(self, a, b):
+        self.r = a * b
+        return self.r
+
+    def div(self, a, b):
+        if b == 0:
+            print("Error: división por cero.")
+            return None
+        self.r = a / b
+        return self.r
+
+    # Operaciones algebraicas
+    def pot(self, a, b):
+        self.r = a ** b
+        return self.r
+
+    def raiz(self, a):
+        if a < 0:
+            print("Error: raíz de número negativo.")
+            return None
+        self.r = math.sqrt(a)
+        return self.r
+
+    def log(self, a):
+        if a <= 0:
+            print("Error: logaritmo solo para positivos.")
+            return None
+        self.r = math.log10(a)
+        return self.r
