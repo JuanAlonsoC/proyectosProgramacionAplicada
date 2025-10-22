@@ -1,0 +1,15 @@
+from OpAlgeb import Op
+
+ob = Op()
+
+v, w = 20, 11
+ob.setV1(v)
+ob.setV2(w)
+
+print("Suma:", ob.sumar(ob.getV1(), ob.getV2()))
+print("Resta:", ob.restar(ob.getV1(), ob.getV2()))
+print("Multiplicación:", ob.mult(ob.getV1(), ob.getV2()))
+print("División:", ob.div(ob.getV1(), ob.getV2()))
+print("Potencia:", ob.pot(ob.getV1(), ob.getV2()))
+print("Raíz cuadrada:", ob.raiz(ob.getV1()))
+print("Logaritmo base 10:", ob.log(ob.getV1()))
